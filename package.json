@@ -1,0 +1,40 @@
+{
+  "name": "hospitalrun-server-routes",
+  "version": "1.0.0-beta",
+  "description": "Express server routes for HospitalRun",
+  "main": "index.js",
+  "scripts": {
+    "test": "snyk test && eslint *.js routes/*.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HospitalRun/hospitalrun-server-routes.git"
+  },
+  "keywords": [
+    "HospitalRun",
+    "Express"
+  ],
+  "author": "John Kleinschmidt",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HospitalRun/hospitalrun-server-routes/issues"
+  },
+  "homepage": "http://hospitalrun.io",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.14.0",
+    "express-interceptor": "^1.1.1",
+    "express-session": "^1.13.0",
+    "glob": "^7.0.0",
+    "nano": "^6.2.0",
+    "on-headers": "^1.0.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "request": "^2.81.0",
+    "serializer": "0.0.3",
+    "snyk": "^1.13.2"
+  },
+  "snyk": true
+}
